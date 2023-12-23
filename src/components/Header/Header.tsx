@@ -18,7 +18,7 @@ export default function Header(){
             <nav className={styles.container__links}>
                 <ul className={styles.container__links_list}>
                     {
-                        pages?.name.map((element: string) => (
+                        pages?.map((element: string) => (
                             <li key={element}><Link to={"/"}>{element}</Link></li>
                         ))
                     }

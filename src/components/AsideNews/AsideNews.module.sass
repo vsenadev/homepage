@@ -1,0 +1,34 @@
+@import '../../assets/styles/_variables.sass'
+
+.container
+  background-color: $VeryDarkBlue
+  width: calc(30% - 4rem)
+  height: calc(100% - 4rem)
+  padding: 2rem
+
+  &__title
+    color: $SoftOrange
+    font-family: $ExtraBold
+    font-size: 2rem
+
+  &__news
+    display: flex
+    flex-direction: column
+    padding-top: 10%
+
+    &_div
+      width: 100%
+      height: 50%
+      display: flex
+      flex-direction: column
+      border-bottom: 1px solid $GrayishBlue
+      padding: 10% 0
+      gap: 1rem
+
+      &_title
+        color: $OffWhite
+        font-family: $Bold
+
+      &_text
+        color: $GrayishBlue
+        font-family: $Regular

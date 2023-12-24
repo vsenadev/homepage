@@ -18,3 +18,12 @@ export async function getAsideNews(setData: React.Dispatch<React.SetStateAction<
         console.error("Error loading pages:", error);
     }
 }
+
+export async function getHistoryNews(setData: React.Dispatch<React.SetStateAction<{ number: string, title: string,description: string }[] | undefined  >>) {
+    try {
+        const response = await import('../data/historyNews.json');
+        setData(response.history);
+    } catch (error) {
+        console.error("Error loading pages:", error);
+    }
+}

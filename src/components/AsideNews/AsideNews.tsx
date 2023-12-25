@@ -17,7 +17,7 @@ export default function AsideNews() {
             <div className={styles.container__news}>
                 {
                     asideNews?.map( (element: IAsideNews) => (
-                        <div className={styles.container__news_div}>
+                        <div className={styles.container__news_div} key={element.title}>
                             <h3 className={styles.container__news_div_title}>{element.title}</h3>
                             <p className={styles.container__news_div_text}>{element.description}</p>
                         </div>

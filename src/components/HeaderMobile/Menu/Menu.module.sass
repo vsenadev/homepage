@@ -1,8 +1,36 @@
 @import '../../../assets/styles/_variables.sass'
 
 .container
-  background-color: #807E89
-  position: absolute
-  width: 100%
+  background-color: rgba(128, 126, 137, 0.41)
+  position: fixed
+  width: 100vw
   height: 100vh
-  z-index: 2
+  top: 0
+  left: 0
+  display: flex
+  justify-content: flex-end
+  border-left: 1px solid #000
+
+  &__menu
+    display: flex
+    gap: 3rem
+    flex-direction: column
+    padding: 1.5rem
+    height: calc(100% - 3rem)
+    width: calc(70% - 3rem)
+    background-color: $OffWhite
+
+    &_image
+      width: 100%
+      display: flex
+      justify-content: flex-end
+
+    &_links
+      display: flex
+      flex-direction: column
+      gap: 2rem
+
+      a
+        font-family: $Regular
+        color: $VeryDarkBlue
+        text-decoration: none
